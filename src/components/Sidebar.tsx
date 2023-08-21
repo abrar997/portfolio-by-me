@@ -11,9 +11,9 @@ const Links = [
 
 export default function Sidebar() {
   return (
-    <div className="flex flex-col justify-between items-center h-full pb-24 ">
-      <div className="flex flex-col items-center justify-center row-span-1 gap-2">
-        <div className="relative h-full">
+    <div className="flex flex-col gap-12 items-center">
+      <div className="flex flex-col items-center justify-center gap-2">
+        <div className="relative ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="178"
@@ -41,7 +41,7 @@ export default function Sidebar() {
           <p className="text-gray-700">Frontend web developer</p>
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center w-full my-3 gap-3 row-span-1 font-semibold text-main h-full ">
+      <div className="flex flex-col items-center justify-center w-full my-3 gap-3  font-semibold text-main  ">
         {Links.map((i) => {
           return (
             <Link
@@ -53,9 +53,10 @@ export default function Sidebar() {
           );
         })}
       </div>
-      <p className="flex items-center justify-center mt-auto gap-1 text-gray-600 text-sm">
+      <p className="flex items-center justify-center mt-auto gap-1  text-gray-600 text-sm">
         All rights reserved
-        <BsFillHeartFill size={12} className="fill-main" /> abrar muthana 2023
+        <BsFillHeartFill size={12} className="fill-main" />
+        abrar muthana 2023
       </p>
     </div>
   );
